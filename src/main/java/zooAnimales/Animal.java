@@ -40,7 +40,7 @@ public class Animal {
                 "Aves: "+Ave.cantidadAves()+'\n'+
                 "Reptiles: "+Reptil.cantidadReptiles()+'\n'+
                 "Peces: "+Pez.cantidadPeces()+'\n'+
-                "Anfibio: "+Anfibio.cantidadAnfibios();
+                "Anfibios: "+Anfibio.cantidadAnfibios();
     }
     @Override
     public String toString(){
