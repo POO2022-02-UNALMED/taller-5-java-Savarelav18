@@ -27,7 +27,11 @@ public class Reptil extends Animal{
     public Reptil(){Reptil.listado.add(this);}
 
     public static int cantidadReptiles(){
-        return Reptil.listado.size();
+        if(Reptil.listado!=null)
+            return Reptil.listado.size();
+        else {
+            return 0;
+        }
     }
     @Override
     public String movimiento(){return "reptar";}

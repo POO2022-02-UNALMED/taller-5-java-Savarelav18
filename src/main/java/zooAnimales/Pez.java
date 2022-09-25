@@ -30,7 +30,11 @@ public class Pez extends Animal{
     public Pez(){Pez.listado.add(this);}
 
     public static int  cantidadPeces(){
-        return Pez.listado.size();
+        if(Pez.listado!=null)
+            return Pez.listado.size();
+        else {
+            return 0;
+        }
     }
     @Override
     public String movimiento(){return "nadar";}

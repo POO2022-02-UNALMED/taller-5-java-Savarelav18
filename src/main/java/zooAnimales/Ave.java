@@ -25,7 +25,11 @@ public class Ave extends Animal{
     public Ave(){Ave.listado.add(this);}
 
     public static int cantidadAves(){
-        return Ave.listado.size();
+        if(Ave.listado!=null)
+            return Ave.listado.size();
+        else {
+            return 0;
+        }
     }
     @Override
     public String movimiento(){return "volar";}
