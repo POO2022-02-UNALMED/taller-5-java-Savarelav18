@@ -6,16 +6,16 @@ import java.util.ArrayList;
 
 public class Zona {
     private String nombre;
-    private ArrayList<Zoologico> zoo = new ArrayList<>();
+    private Zoologico zoo;
     private ArrayList<Animal> animales = new ArrayList<>();
 
-    public Zona(String nombre,ArrayList<Zoologico>zoo,ArrayList<Animal>animales){
+    public Zona(String nombre,Zoologico zoo,ArrayList<Animal>animales){
         this.nombre=nombre;
         this.zoo=zoo;
         this.animales=animales;
 
     }
-    public Zona(String nombre,ArrayList<Zoologico>zoo){
+    public Zona(String nombre,Zoologico zoo){
         this.nombre=nombre;
         this.zoo=zoo;
     }
@@ -37,11 +37,11 @@ public class Zona {
         this.nombre = nombre;
     }
 
-    public ArrayList<Zoologico> getZoo() {
+    public Zoologico getZoo() {
         return zoo;
     }
 
-    public void setZoo(ArrayList<Zoologico> zoo) {
+    public void setZoo(Zoologico zoo) {
         this.zoo = zoo;
     }
 
