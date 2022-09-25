@@ -2,8 +2,6 @@ package zooAnimales;
 
 import gestion.Zona;
 
-import java.util.ArrayList;
-
 public class Animal {
     private static int totalAnimales=0;
     private String nombre;
@@ -21,11 +19,16 @@ public class Animal {
         this.zona = zona;
     }
 
-    public Animal(){
+    public Animal(String nombre, int edad, String habitat, String genero) {
         Animal.totalAnimales++;
+        this.nombre=nombre;
+        this.edad=edad;
+        this.habitat = habitat;
+        this.genero = genero;
     }
 
-    public Animal(String nombre, int edad, String habitat, String genero) {
+    public Animal(){
+        Animal.totalAnimales++;
     }
 
     public String movimiento(){
